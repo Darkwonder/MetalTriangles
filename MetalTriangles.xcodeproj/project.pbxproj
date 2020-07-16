@@ -11,6 +11,8 @@
 		F61A31E624BF606600A5333C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61A31E524BF606600A5333C /* ViewController.swift */; };
 		F61A31E824BF606700A5333C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F61A31E724BF606700A5333C /* Assets.xcassets */; };
 		F61A31EB24BF606700A5333C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F61A31E924BF606700A5333C /* Main.storyboard */; };
+		F61A31F424BF60B500A5333C /* CustomMetalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61A31F324BF60B500A5333C /* CustomMetalView.swift */; };
+		F644B7B624C0858300989C4A /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = F644B7B524C0858300989C4A /* Shaders.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +23,8 @@
 		F61A31EA24BF606700A5333C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F61A31EC24BF606700A5333C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F61A31ED24BF606700A5333C /* MetalTriangles.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MetalTriangles.entitlements; sourceTree = "<group>"; };
+		F61A31F324BF60B500A5333C /* CustomMetalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomMetalView.swift; sourceTree = "<group>"; };
+		F644B7B524C0858300989C4A /* Shaders.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,9 +59,11 @@
 			children = (
 				F61A31E324BF606600A5333C /* AppDelegate.swift */,
 				F61A31E524BF606600A5333C /* ViewController.swift */,
+				F61A31F324BF60B500A5333C /* CustomMetalView.swift */,
 				F61A31E724BF606700A5333C /* Assets.xcassets */,
 				F61A31E924BF606700A5333C /* Main.storyboard */,
 				F61A31EC24BF606700A5333C /* Info.plist */,
+				F644B7B524C0858300989C4A /* Shaders.metal */,
 				F61A31ED24BF606700A5333C /* MetalTriangles.entitlements */,
 			);
 			path = MetalTriangles;
@@ -132,7 +138,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F644B7B624C0858300989C4A /* Shaders.metal in Sources */,
 				F61A31E624BF606600A5333C /* ViewController.swift in Sources */,
+				F61A31F424BF60B500A5333C /* CustomMetalView.swift in Sources */,
 				F61A31E424BF606600A5333C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
